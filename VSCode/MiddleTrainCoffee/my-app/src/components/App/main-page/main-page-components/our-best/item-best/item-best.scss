@@ -1,0 +1,27 @@
+.itemBest {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.65);
+    justify-content: center;
+    width: 220px;
+    height: 240px;
+    border-radius: 7px;
+    p{
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+    
+}
+.item-info {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end
+}
+.price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}

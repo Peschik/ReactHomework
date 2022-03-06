@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "name": "Solimo Coffee Beans 2 kg",
+        "photo": "items-main-page/Solimo.svg",
+        "price": "10.73",
+        "alt": "Solimo"   
+    },
+    {
+        "id": "2",
+        "name": "Presto Coffee Beans 1 kg",
+        "photo": "items-main-page/Presto.svg",
+        "price": "15.99",
+        "alt": "Presto"
+    },
+    {
+        "id": "3",
+        "name": "AROMISTICO Coffee 1 kg",
+        "photo": "items-main-page/Aromistico.svg",
+        "price": "6.99",
+        "alt": "Aromistico"
+    }
+
+]
