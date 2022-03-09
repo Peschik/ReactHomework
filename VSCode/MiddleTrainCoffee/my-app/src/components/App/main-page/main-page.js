@@ -7,12 +7,12 @@ import SectionHome from "./main-page-components/section-home/section-home";
 
 const MainPage = () => {
   return (
-    <div className="wrapper">
+    <>
     <SectionHome />
     <About />
     <OurBest/>
     <Footer />
-    </div>
+    </>
   );
 };
 

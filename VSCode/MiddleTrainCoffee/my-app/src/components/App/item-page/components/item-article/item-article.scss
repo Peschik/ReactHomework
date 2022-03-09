@@ -1,0 +1,15 @@
+.info-block .container {
+    div.text-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    span {
+        padding-bottom: 16px;
+    }
+    .price-item {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+}

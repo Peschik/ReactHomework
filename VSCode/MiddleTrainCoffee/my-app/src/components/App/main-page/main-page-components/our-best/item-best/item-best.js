@@ -8,9 +8,9 @@ const Item = () => {
       return (
         <li key={item.id}>
           <div className="container">
-            <div className="itemBest">
+            <div className="item-coffee">
               <img src={item.photo} alt={item.alt} />
-              <div className="item-info">
+              <div className="items-info">
                 <p>{item.name}</p>
                 <span className="price">{item.price + "$"}</span>
               </div>

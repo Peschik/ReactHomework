@@ -4,7 +4,7 @@ import logoBr from "/Users/artemijkolotov/Documents/VSCode/MiddleTrainCoffee/my-
 import Navbar from "../navbar/navbar";
 const SectionHome = () => {
     return (
-        <section className="menu">
+        <section className="menu main-page">
       <div className="container">
         <Navbar />
       </div>

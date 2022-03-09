@@ -1,5 +1,5 @@
 import './navbar.scss'
-
+import { Link } from 'react-router-dom';
 
 import logo from "/Users/artemijkolotov/Documents/VSCode/MiddleTrainCoffee/my-app/src/img/Group.svg";
 
@@ -8,13 +8,13 @@ const Navbar = () => {
     <nav className="navbar">
       <div>
         <img className="symbol_coffee" src={logo} alt="Coffee Beans" />
-        <a href="..." className="navbar_item">
+        <Link to='/' className="navbar_item">
           Coffee house
-        </a>
+        </Link>
       </div>
-      <a href="..." className="navbar_item">
+      <Link to="/aromistico_list" className="navbar_item">
         Our coffee
-      </a>
+      </Link>
       <a href="..." className="navbar_item">
         For your pleasure
       </a>

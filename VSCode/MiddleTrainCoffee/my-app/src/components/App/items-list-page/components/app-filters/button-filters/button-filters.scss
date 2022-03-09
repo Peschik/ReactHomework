@@ -1,0 +1,73 @@
+@import "../../../../variables.scss";
+.filter-by-input {
+  span {
+    padding-right: 19px;
+  }
+  input {
+    background: #ffffff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 36px;
+    transition: all .8s ease-out;
+    color:rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  input:hover{
+    transform: translate(0, -5px);
+    padding: 10px 40px;
+  }
+  input::placeholder {
+    text-align: center;
+    color:rgba(0, 0, 0, 0.25);
+  }
+}
+.filter-by-btn {
+  span {
+    padding-right: 35px;
+  }
+  button {
+    background: #ffffff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: $main-color;
+    padding: 7px 20px 5px;
+    margin-right: 5px;
+    transition: all .8s ease-out;
+  }
+}
+
+.btn-brazil {
+  border-radius: 4px 0px 0px 4px;
+}
+.btn-kenya {
+  border-radius: 0px;
+}
+.btn-columbia {
+  border-radius: 4px 0px 0px 4px;
+  
+}
+.filter-by-btn {
+ button.active {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border:3px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px 25px 10px;
+  transform: translate(0, -5px);
+  }
+ }
+ .filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  div{
+    display: flex;
+    align-items: center;
+  }
+  span {
+      color: hsl(0, 0%, 0%);
+  }  
+}

@@ -1,0 +1,36 @@
+li{
+    flex-basis: 25.1%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 60px;
+}
+.item-coffee {
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+    width: 240px;
+    background-color: white;
+    height: 290px;
+    display: flex;
+    align-items: normal;
+    padding: 37px 27px 30px 30px;
+    transition: all .5s ease-out;
+   
+    p{
+        text-align: center;
+    }
+    img{
+        margin-bottom: 14px;
+        margin:auto
+    }
+}
+.item-coffee:hover{
+    transform: translate(0, -10px);
+    filter: drop-shadow(10px 10px 20px rgba(52, 50, 34, 0.875));
+}
+.items-info{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.country {
+    color: #000000;
+    margin: 14px 0px;
+}
