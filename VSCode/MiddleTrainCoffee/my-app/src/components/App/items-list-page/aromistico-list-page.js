@@ -1,44 +1,33 @@
 import SectionOurCoffee from "./components/section-our-coffee/section-our-coffee";
-import SideArticle from "./components/side-article/side.article";
 import AppFilter from "./components/app-filters/button-filters/button-filters";
 import Footer from "../main-page/main-page-components/footer/footer";
 import AromisticoList from "./components/aromistico-list/aromistico-items-list";
 import { Component } from "react";
 import Filterbyinput from "./components/app-filters/input-filter/input-filter";
+import {data} from "../items-list-page/components/index";
+import AboutGoods from "../goods-page/components/about-goods/about-goods";
+import sunsetCoffee from "../items-list-page/components/index";
+import ReactDOM from 'react-dom';
 
 class ItemListPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {
-          country: "Brazil",
-          id: 1,
-        },
-        {
-          country: "Kenya",
-          id: 2,
-        },
-        {
-          country: "Columbia",
-          id: 3,
-        },
-        {
-          country: "Brazil",
-          id: 4,
-        },
-        {
-          country: "Brazil",
-          id: 5,
-        },
-        {
-          country: "Brazil",
-          id: 6,
-        },
-      ],
+      data: data,
       filterBy: '',
       term: '',
+      advOpen: false
     };
+  }
+
+  showAdv = () => {
+    this.setState(({advOpen}) => ({
+      advOpen: !advOpen
+    }))
+  }
+
+  componentDidMount() {
+    setTimeout(this.showAdv, 2000)
   }
   onFilterSelect = (filterBy) => {
     if(filterBy === this.state.filterBy){
@@ -78,8 +67,31 @@ class ItemListPage extends Component {
     return (
       <>
         <SectionOurCoffee />
-        <SideArticle />
-        <div className="filter">
+        <AboutGoods 
+          left={
+          <img className="sm-mx-auto" src={sunsetCoffee} alt="Sunset with coffee" />
+          }
+          right={
+            <p style={{'color' : 'black', 'textAlign' : 'center'}}>
+            Extremity sweetness difficult behaviour he of. On <br />
+            disposal of as landlord horrible.
+            <br />
+            <br />
+            Afraid at highly months do things on at. Situation
+            <br /> recommend objection do intention
+            <br />
+            so questions.
+            <br /> As greatly removed calling pleased improve an.
+            <br /> Last ask him cold feel
+            <br />
+            met spot shy want. Children me laughing we
+            <br /> prospect answered followed. At it went
+            <br />
+            is song that held help face.
+          </p>
+          } />
+        
+        <div className="filter container">
         <Filterbyinput onUpdateSearch={this.onUpdateSearch}/>
         <AppFilter 
           onUpdateSearch = {this.onUpdateSearch}
@@ -89,8 +101,33 @@ class ItemListPage extends Component {
         </div>
         <AromisticoList data={visibleData} />
         <Footer />
+        {this.state.advOpen ?
+           <Banner>
+             <CloudMessage />
+            </Banner> : null}
+        
       </>
     );
   }
 }
+
+const Banner = (props) => {
+  const node = document.createElement('div')
+  document.body.appendChild(node);
+
+  return ReactDOM.createPortal(props.children, node)
+}
+
+const CloudMessage = () => {
+  return (
+    <div className="dialog">
+         <span>Would u like to buy something? Please, write us!</span>
+         <input type='text' />
+    </div>
+  )
+}
+
+
 export default ItemListPage;
+
+/*renderProps - когда необходимо передать функцию в какой-то компонент или отрендерить, но не привязать компонент жестко к родителю*/

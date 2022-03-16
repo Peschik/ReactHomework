@@ -5,10 +5,10 @@ import "./section-our-coffee.scss"
 const SectionOurCoffee = () => {
     return (
         <>
-    <section className="menu ">
+    <section className="menu our-coffee">
         <div className="container">
         <Navbar />
-        <h1>Our coffee</h1>
+        <h1 className='md-mx-auto'>Our coffee</h1>
         </div>
     </section>
         </>

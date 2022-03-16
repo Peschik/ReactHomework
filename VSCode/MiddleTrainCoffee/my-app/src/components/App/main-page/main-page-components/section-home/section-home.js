@@ -9,11 +9,11 @@ const SectionHome = () => {
         <Navbar />
       </div>
       <div className="info-block">
-        <h1>Everything You Love About Coffee</h1>
-        <img src={logoBr} alt="Coffee-beans" />
+        <h1 className="mb-5">Everything You Love About Coffee</h1>
+        <img src={logoBr} alt="Coffee-beans" className="mb-5" />
         <h2>We make every day full of energy and taste</h2>
         <h2>Want to try our beans?</h2>
-        <button className='more'>More</button>
+        <button className='more mt-5'>More</button>
       </div>
     </section>
     )

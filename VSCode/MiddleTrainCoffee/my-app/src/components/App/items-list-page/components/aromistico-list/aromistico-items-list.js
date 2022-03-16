@@ -13,11 +13,11 @@ const AromisticoList = ({data}) => {
             />
         )
     })
+   
     return (
        <div className="container">
         <ul>
             {elements}
-
         </ul>
        </div>
     )

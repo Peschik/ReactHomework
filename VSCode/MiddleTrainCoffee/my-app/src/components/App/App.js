@@ -4,6 +4,8 @@ import ItemListPage from './items-list-page/aromistico-list-page';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ItemPage from './item-page/item-page';
+import GoodsPage from './goods-page/goods-page';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         </Route> 
         <Route exact path="/aromistico_item">
           <ItemPage />
+        </Route>
+        <Route exact path="/for_your_pleasure">
+          <GoodsPage />
         </Route>
       </Switch>
     </Router>

@@ -2,3 +2,6 @@
     margin: 0 auto;
     max-width: 1000px;
 }
+span, h1, h2, p {
+    cursor:default
+}
